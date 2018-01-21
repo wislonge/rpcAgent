@@ -15,10 +15,11 @@ public class controlClientEntity {
   
                 XmlRpcClient client = new XmlRpcClient();  
                 client.setConfig(config);  
-                Object[] params={"helloworld"};
+                Object[] params={"ls"};
                 //Object[] params = new Object[]{new Integer(31), new Integer(9)};  
                // String result = (String) client.execute("MyCalculator.sayhello", params);  
-                String result = (String) client.execute("systembase.list", params);  
+                //String result = (String) client.execute("systembase.list", params);  
+                String result = (String) client.execute("systembase.exeCmd", params); 
                 System.out.println(result);  
   
             } catch (XmlRpcException e) {  
