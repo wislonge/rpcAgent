@@ -1,4 +1,4 @@
-package com.ark.controlagent;
+
 
 
 import java.net.URL;
@@ -15,7 +15,7 @@ public class controlClientEntity {
   
                 XmlRpcClient client = new XmlRpcClient();  
                 client.setConfig(config);  
-                Object[] params={"ls"};
+                Object[] params={"ps aux"};
                 //Object[] params = new Object[]{new Integer(31), new Integer(9)};  
                // String result = (String) client.execute("MyCalculator.sayhello", params);  
                 //String result = (String) client.execute("systembase.list", params);  
